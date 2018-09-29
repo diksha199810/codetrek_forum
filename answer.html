@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CodeTrek</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<div class="container ">
+  <!-- Brand/logo -->
+  
+  <a class="navbar-brand" href="#">CodeTrek Forum</a>
+  <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Questions</a>
+          </li>
+        </ul>
+
+  <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+             aria-expanded="false">
+              <i class="fa fa-cog"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-item disabled">Vaibhav Rathore</div>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">My Profile</a>
+              <a class="dropdown-item" href="#">Settings</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Sign out</a>
+            </div>
+          </li>
+        </ul>
+        </div>
+</nav>
+
+<div class="container mt-5">
+<h2> Ask Question</h2>
+</div>
+
+<div class="container ml-6 mr-6">
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <form name="frm">
+        <div class="form-group">
+          <label for="exampleInputtitle">Title
+            <span style="color:red">*</span>
+          </label>
+          <input type="text" class="form-control" name="answer"  placeholder="Enter  a short and proper title for your question">
+          <br>
+        </div>
+        <div class="form-group">
+          <label for="comment">Description
+            <span style="color:red">*</span>
+          </label>
+          <textarea class="form-control" rows="5" name="description" placeholder="Enter a detailed description of what problem you are facing and steps to replicate"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputtags">Add Tags</label>
+          <input type="Tags" class="form-control" id="exampleInputtags" placeholder="tag1,tag2,tag3">
+          <small id="about tag" class="form-text text-muted">Tags will help others to find your question faster.Add comma separated tags.For ex: codetrek,bootstrap,frontend.</small>
+        </div>
+      </form>
+    <button type="button"  class="btn btn-primary" onclick="myFunction()">Post your question</button>
+    </div>
+    <br>
+
+</form>
+</div>
+</div>
+</div>
+</div>
+<script src="js/main.js">
+
+
+</script>
+
+<footer class="bg-light py-3 text-center mt-5">
+    <span class="text-primary"><i class="fas fa-code"></i> Developed at CodeTrek Tehri 2018</span>
+  </footer>
+</body>
+</html>
